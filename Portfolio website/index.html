@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="icon" type="image/x-icon" href="/images/letter-n (1).png">
+  <title>Nafis</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+<style>
+
+.icon-link {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-size: 24px; /* Font size */
+    padding: 10px 15px; /* Padding around the link */
+    border-radius: 5px; /* Rounded corners */
+
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effects */
+}
+
+.icon-link:hover {
+    background-color: #333; /* Dark background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.icon-link i {
+    margin-right: 8px; /* Spacing between icon and text */
+}
+
+/* Styling for button container */
+.download-link {
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Button styling */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px; /* Adjust padding for a rounded appearance */
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  background-color: #292929; /* Green background */
+  border: none;
+  border-radius: 25px; /* Circular border */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+/* Icon styling inside button */
+.btn i {
+  margin-right: 8px; /* Spacing between icon and text */
+  font-size: 18px;
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #012f08; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+.timeline-heading{
+color: #292929;
+}
+.theme-list {
+  position: relative;
+  padding-left: 30px;
+  list-style: none;
+  z-index: 10;
+}
+
+.theme-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 9px;
+  margin: auto;
+  width: 1px;
+  height: 85%;
+  background-color: #cacdd6;
+  z-index: -1;
+}
+
+.theme-list li {
+  display: block;
+  margin: 5px 0;
+}
+
+.theme-list li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  margin: 6px 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #888;
+}
+
+.project-title{
+font-size: 25px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.timeline {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  margin-bottom: 20px; /* Adds space between each timeline item */
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline .title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Adds space between the title and details */
+}
+
+.timeline .details {
+  padding: 10px 15px;
+  border-left: 2px solid #292929; /* Adds a vertical line to separate years from details */
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.timeline .timeline-heading {
+  font-size: 1.1em;
+  margin-bottom: 4px; /* Adds space between heading and institution */
+  color: #292929;
+}
+
+.timeline .timeline-institution {
+  color: #6c757d;
+}
+
+
+.skills-section {
+padding: 20px;
+max-width: 800px;
+margin: 0 auto;
+color: #333;
+}
+
+.skill-category {
+margin-bottom: 30px;
+text-align: center;
+}
+
+.skill-category h4 {
+font-size: 1.5rem;
+font-weight: 600;
+color: #444;
+margin-bottom: 10px;
+border-bottom: 2px solid #b8a07e;
+display: inline-block;
+padding-bottom: 5px;
+}
+
+.skill-wrapper {
+display: flex;
+justify-content: center;
+gap: 12px;
+flex-wrap: wrap;
+padding-top: 10px;
+}
+
+.btn-skill {
+background-color: #333;
+color: #fff;
+border: none;
+padding: 4px 15px;
+border-radius: 20px;
+font-size: 14px;
+font-weight: 500;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s ease, transform 0.2s ease;
+cursor: pointer;
+}
+
+.btn-skill:hover {
+background-color: #012f08;
+transform: translateY(-2px);
+}
+
+.btn-skill:active {
+background-color: #2d6398;
+transform: translateY(1px);
+}
+
+</style>
+
+  <!-- navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo">
+          <a href="index.html"><img src="./images/logo.png"  alt="logo"></a>
+        </div>
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#education" class="smoothScroll">Education</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- header -->
+  <div id="header" class="home">
+    <div class="container">
+      <div class="header-content">
+        <h1 style="color: #292929;">I'm <span class="typed"></span></h1>
+        <p style="color: #333;">Full Stack Devloper</p>
+        <ul class="list-unstyled list-social">
+          <li><a target="_blank" href="https://www.facebook.com/nafis.nafialnafi.N/"><i class="ion-social-facebook"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/nafijur-rahaman/"><i class="ion-social-linkedin"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/nafis.nafialnafi.N/"><i class="ion-social-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- about -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/nafi.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class=" offset-lg-1">
+            <h1 style="color:#292929;">Md. Nafijur Rahaman</h1>
+            <h5 style="color: #333131;" class=" mb-3 mt-3">Full Stack Developer</h5>
+            <p class="text-muted">As a Skilled Full Stack Developer with expertise across both front-end and back-end technologies. I design and implement dynamic and responsive web applications using a range of tools and frameworks, including HTML, CSS, Javascript, and back-end technologies like Django. With a strong foundation in database management and cloud service.</p>
+            <ul class="theme-list">
+              <li style="color: #534f4f;"><b style="color: #292929; font-weight:550">From:</b> Dhaka, Bangladesh</li>
+              <li style="color: #534f4f;"><b style="color: #292929;font-weight:550 ">Lives In:</b> Mirpur, Dhaka</li>
+              <li style="color: #534f4f;"><b style="color: #292929;font-weight:550 ">Age:</b> 21</li>
+              <li style="color: #534f4f;"><b style="color: #292929;font-weight:550 ">Gender:</b> Male</li>
+            </ul>
+      </head>
+      <body>
+          <a  href="./Profile.pdf" download="Nafijur_Rahaman.pdf" class="download-link">
+              <button class="btn">
+                  <i class="fas fa-download"></i> Download CV
+              </button>
+          </a>
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+  <!-- services -->
+  <div id="services">
+    <div class="container">
+        <div class="services-carousel owl-theme">
+
+            <div class="services-block">
+                <i class="ion-ios-color-wand-outline"></i>
+                <span>WEB DEVELOPMENT</span>
+                <p class="separator">Building scalable, responsive, and user-friendly websites from scratch, focusing on both functionality and aesthetics.</p>
+            </div>
+
+            <div class="services-block">
+                <i class="ion-ios-cog-outline"></i>
+                <span>BACK-END DEVELOPMENT</span>
+                <p class="separator">Creating reliable, efficient back-end solutions with databases, APIs, and server management to power applications.</p>
+            </div>
+
+            <div class="services-block">
+                <i class="ion-ios-speedometer-outline"></i>
+                <span>PERFORMANCE OPTIMIZATION</span>
+                <p class="separator">Optimizing applications to ensure fast load times, minimal resource usage, and a smooth user experience.</p>
+            </div>
+
+
+
+            <div class="services-block">
+              <i class="ion-ios-analytics-outline"></i>
+              <span>PAYMENT INTEGRATION</span>
+              <p class="separator">Implementing secure and efficient payment gateways to streamline transactions and ensure a seamless user experience.</p>
+          </div>
+          
+
+            <div class="services-block">
+                <i class="ion-ios-cloud-outline"></i>
+                <span>CLOUD INTEGRATION</span>
+                <p class="separator">Deploying and managing applications on cloud platforms to ensure scalability and reliability.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+ <!-- education and skills-->
+  <div class="vg-page">
+    <div id="education" class="container pt-5">
+        <div class="row">
+            <div class="section-title col-md-6">
+                <h2>Education:</h2>
+                <ul class="timeline mt-4">
+                  <li>
+                      <div class="title">2023</div>
+                      <div class="details">
+                          <h5 class="timeline-heading">CSE Fundamentals with Phitron</h5>
+                          <small class="timeline-institution">Phitron</small>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="title">2023</div>
+                      <div class="details">
+                          <h5 class="timeline-heading">BSC In CSE</h5>
+                          <small class="timeline-institution">Bangladesh University of Business and Technology</small>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="title">2021</div>
+                      <div class="details">
+                          <h5 class="timeline-heading">Higher School Certificate</h5>
+                          <small class="timeline-institution">Govt. Ashek Mahmud College</small>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="title">2019</div>
+                      <div class="details">
+                          <h5 class="timeline-heading">Secondary School Certificate</h5>
+                          <small class="timeline-institution">Wisdom Lab School and College</small>
+                      </div>
+                  </li>
+              </ul>
+              
+            </div>
+            <div class=" section-title col-md-6 ms-auto">
+              <h2>SKILLS:</h2>
+              <div class="skills-section mt-5">
+                  <!-- Row 1: Frontend and Backend Skills -->
+                  <div class="row">
+                      <!-- Frontend Skills -->
+                      <div class="col-md-6 skill-category">
+                          <h4>Frontend</h4>
+                          <div class="skill-wrapper">
+                              <button class="btn btn-skill">HTML</button>
+                              <button class="btn btn-skill">CSS</button>
+                              <button class="btn btn-skill">JavaScript</button>
+                              <button class="btn btn-skill">React</button>
+                          </div>
+                      </div>
+          
+                      <!-- Backend Skills -->
+                      <div class="col-md-6 skill-category">
+                          <h4>Backend</h4>
+                          <div class="skill-wrapper">
+                              <button class="btn btn-skill">Python</button>
+                              <button class="btn btn-skill">Django</button>
+                              <button class="btn btn-skill">Node.js</button>
+                              <button class="btn btn-skill">Express</button>
+                          </div>
+                      </div>
+                  </div>
+          
+                  <!-- Row 2: Database and Version Control Skills -->
+                  <div class="row mt-4">
+                      <!-- Database Skills -->
+                      <div class="col-md-6 skill-category">
+                          <h4>Database</h4>
+                          <div class="skill-wrapper">
+                              <button class="btn btn-skill">MySQL</button>
+                              <button class="btn btn-skill">Sqlite</button>
+                              <button class="btn btn-skill">PostgreSQL</button>
+                          </div>
+                      </div>
+          
+                      <!-- Version Control -->
+                      <div class="col-md-6 skill-category">
+                          <h4>Version Control</h4>
+                          <div class="skill-wrapper">
+                              <button class="btn btn-skill">Git</button>
+                              <button class="btn btn-skill">GitHub</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- portfolio -->
+<div id="portfolio" class="text-center paddsection">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>My Full Stack Projects</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="portfolio-container">
+
+          <div class=" col-lg-6 col-md-6 portfolio-thumbnail">
+            <a target="_blank" href="https://tuitionmedia.netlify.app/">
+              <img src="./images/tuition_project.png" alt="img" class="w-full h-auto object-cover">
+              <h3 class="project-title mt-5">Tuition Media</h3>
+              <p class="project-description">A platform for students and tutors to connect and manage tuition sessions.</p>
+              <div class="project-links mt-2">
+                <a target="_blank" target="_blank" href="https://tuitionmedia.netlify.app/" class="text-blue-500 hover:text-blue-700" title="Live Frontend">
+                  <i class="fas fa-external-link-alt fa-lg"></i> <!-- Increased size -->
+                </a>
+                <a href="https://github.com/nafijur-rahaman/Tution-Media-Platform-Backend-" class="text-gray-700 hover:text-gray-900 mx-2" title="GitHub Repository">
+                  <i class="fab fa-github fa-lg"></i> <!-- Increased size -->
+                </a>
+                <a target="_blank" href="https://tution-media-platform-backend.vercel.app/" class="text-blue-500 hover:text-blue-700" title="Live Backend">
+                  <i class="fas fa-server fa-lg"></i> <!-- Increased size -->
+                </a>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-thumbnail">
+            <a target="_blank" href="https://donation-platform.netlify.app/">
+              <img src="./images/donation_project.png" alt="img" class="w-full h-auto object-cover">
+              <h3 class="project-title mt-5">Donation Platform</h3>
+              <p class="project-description">An online platform designed for charity donations and fundraising efforts.</p>
+              <div class="project-links mt-2">
+                <a target="_blank" href="https://donation-platform.netlify.app/" class="text-blue-500 hover:text-blue-700" title="Live Frontend">
+                  <i class="fas fa-external-link-alt fa-lg"></i> <!-- Increased size -->
+                </a>
+                <a target="_blank" href="https://github.com/nafijur-rahaman/Donation-platform-backend" class="text-gray-700 hover:text-gray-900 mx-2" title="GitHub Repository">
+                  <i class="fab fa-github fa-lg"></i> <!-- Increased size -->
+                </a>
+                <a target="_blank" href="https://donation-platform-backend-psi.vercel.app/" class="text-blue-500 hover:text-blue-700" title="Live Backend">
+                  <i class="fas fa-server fa-lg"></i> <!-- Increased size -->
+                </a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<!--contact -->
+<div id="contact" class="paddsection">
+  <div class="container">
+    <div class="contact-block1">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="contact-contact">
+            <h2 class="mb-30">GET IN TOUCH</h2>
+            <ul class="contact-details">
+              <li style="color: #333;"><span>14 No. Street, Mirpur-2</span></li>
+              <li style="color: #333;" ><span>Dhaka, Bangladesh</span></li>
+              <li style="color: #333;" ><span>+88 01626681291</span></li>
+              <li style="color: #333;" ><span><a href="mailto:tanjidnafis@gmail.com">tanjidnafis@gmail.com</a></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form id="contactForm" class="contactForm"   action="https://formspree.io/f/mdkonrpn"
+          method="POST">
+            <div class="row">
+          
+              <div class="col-lg-6">
+                <div class="form-group contact-block1">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                  <div class="validation"></div>
+                </div>
+              </div>
+          
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                  <div class="validation"></div>
+                </div>
+              </div>
+          
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                  <div class="validation"></div>
+                </div>
+              </div>
+          
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="12" placeholder="Message" required></textarea>
+                  <div class="validation"></div>
+                </div>
+              </div>
+          
+              <div class="col-lg-12">
+                <input type="submit" class="btn-send" value="SEND MESSAGE">
+              </div>
+          
+            </div>
+          </form>
+          
+          <style>
+            .btn-send {
+              display: inline-block;
+              font-weight: 400;
+              line-height: 1.5;
+              text-align: center;
+              background-color: #292929;
+              color: white;
+              text-decoration: none;
+              vertical-align: middle;
+              cursor: pointer;
+              user-select: none;
+              border: 1px solid transparent;
+              padding: 0.375rem 0.75rem;
+              font-size: 1rem;
+              border-radius: 0.375rem;
+            }
+          
+            .btn-send:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+          </style>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="errormessage" style="display: none;">There was an error sending your message. Please try again later.</div>
+
+
+
+
+
+
+  <!--footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a target="_blank" href="https://www.facebook.com/nafis.nafialnafi.N/"><i class="ion-social-facebook"></i></a></li>
+          <li><a target="_blank"  href="https://www.linkedin.com/in/nafijur-rahaman/"><i class="ion-social-linkedin"></i></a></li>
+          <li><a target="_blank"  href="https://github.com/nafijur-rahaman"><i class="ion-social-github"></i></a></li>
+        </ul>
+      </div>
+
+      <p>&copy; Copyrights Nafis. All rights reserved.</p>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
